@@ -1,0 +1,276 @@
+/* =====================================
+   ESTILOS GENERALES
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* =====================================
+   CONTENEDOR
+===================================== */
+
+.contenedor{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* =====================================
+   ENCABEZADOS
+===================================== */
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+h1{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#003366;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    color:#666;
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+.sidebar{
+    min-height:100vh;
+    background:#003366;
+    color:white;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:12px 20px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#0056b3;
+}
+
+.brand{
+    font-size:26px;
+    font-weight:bold;
+    text-align:center;
+    padding:20px;
+}
+
+/* =====================================
+   TARJETAS
+===================================== */
+
+.card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+/* =====================================
+   IMÁGENES
+===================================== */
+
+.imagen-principal{
+    width:100%;
+    max-width:650px;
+    display:block;
+    margin:25px auto;
+    border-radius:10px;
+}
+
+.logo{
+    width:200px;
+    height:auto;
+    margin-bottom:20px;
+}
+
+/* =====================================
+   LISTAS
+===================================== */
+
+ol,
+ul{
+    margin:20px 40px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* =====================================
+   ENLACES
+===================================== */
+
+a{
+    color:#003366;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#0056b3;
+}
+
+/* =====================================
+   BOTONES
+===================================== */
+
+button,
+.boton{
+
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:12px 20px;
+    cursor:pointer;
+    transition:.3s;
+    text-decoration:none;
+    display:inline-block;
+
+}
+
+button:hover,
+.boton:hover{
+
+    background:#0056b3;
+    color:white;
+
+}
+
+/* =====================================
+   FORMULARIOS
+===================================== */
+
+input{
+
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin-bottom:15px;
+
+}
+
+label{
+
+    font-weight:bold;
+    display:block;
+    margin-bottom:5px;
+
+}
+
+/* =====================================
+   LOGIN
+===================================== */
+
+.login-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+
+}
+
+.login-card{
+
+    width:420px;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+    text-align:center;
+
+}
+
+/* =====================================
+   TABLAS
+===================================== */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+
+}
+
+th{
+
+    background:#003366;
+    color:white;
+    padding:12px;
+
+}
+
+td{
+
+    padding:10px;
+    border-bottom:1px solid #ddd;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+    margin-top:40px;
+    text-align:center;
+    color:#666;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:768px){
+
+    .contenedor{
+
+        width:95%;
+
+    }
+
+    .login-card{
+
+        width:90%;
+
+    }
+
+}

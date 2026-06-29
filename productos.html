@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Improstock - Gestión de Productos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <!-- Menú lateral -->
+
+        <div class="col-md-2 sidebar">
+
+            <div class="text-center mt-4 mb-4">
+
+                <img src="img/logo-improstock.png"
+                     alt="Improstock"
+                     class="logo">
+
+            </div>
+
+            <a href="dashboard.html">🏠 Dashboard</a>
+            <a href="productos.html">📦 Productos</a>
+            <a href="pedidos.html">🛒 Pedidos</a>
+            <a href="login.html">🚪 Cerrar sesión</a>
+
+        </div>
+
+        <!-- Contenido -->
+
+        <div class="col-md-10 p-4">
+
+            <h2>Gestión de Productos</h2>
+
+            <p class="subtitulo">
+
+                Administre la información de los productos registrados en el inventario.
+
+            </p>
+
+            <hr>
+
+            <!-- Formulario -->
+
+            <div class="card p-4 mb-4">
+
+                <h4>Registrar Producto</h4>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <label>Nombre del Producto</label>
+
+                        <input type="text" class="form-control" placeholder="Ej. Motor Eléctrico">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label>Categoría</label>
+
+                        <input type="text" class="form-control" placeholder="Ej. Equipos">
+
+                    </div>
+
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col-md-4">
+
+                        <label>Precio</label>
+
+                        <input type="number" class="form-control" placeholder="$">
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label>Stock</label>
+
+                        <input type="number" class="form-control" placeholder="Cantidad">
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label>Referencia</label>
+
+                        <input type="text" class="form-control" placeholder="REF-001">
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="btn btn-primary mt-4"
+                    onclick="registrarProducto()">
+
+                    Registrar Producto
+
+                </button>
+
+            </div>
+
+            <!-- Tabla -->
+
+            <div class="card p-4">
+
+                <h4>Listado de Productos</h4>
+
+                <table class="table table-hover">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Estado</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>1</td>
+                            <td>Motor Eléctrico</td>
+                            <td>Equipos</td>
+                            <td>$850.000</td>
+                            <td>25</td>
+                            <td>
+                                <span class="badge bg-success">
+                                    Disponible
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>2</td>
+                            <td>Bomba Hidráulica</td>
+                            <td>Repuestos</td>
+                            <td>$420.000</td>
+                            <td>18</td>
+                            <td>
+
+                                <span class="badge bg-success">
+
+                                    Disponible
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>3</td>
+                            <td>Compresor Industrial</td>
+                            <td>Equipos</td>
+                            <td>$1.250.000</td>
+                            <td>8</td>
+                            <td>
+
+                                <span class="badge bg-warning text-dark">
+
+                                    Stock Bajo
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
